@@ -229,12 +229,37 @@ ou R$ 26,60 via Depósito
     </div>
   </div>
     
+    
   </div> <!-- esse é o fim do row -->
     <div class="center">
       <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
         <i class="material-icons">add</i>
       </a>
     </div> 
+     <div id="side-form" class="sidenav side-form">
+    <form class="adiciona-produto container section">
+      <h6 >Novo Produto</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="Battom Matte " id="produtoTitulo" type="text" class="validate">
+        <label for="produtoTitulo">Título do Profuto</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Batotom matte cor nude-02" id="produtoDescricao" type="text" class="validate">
+        <label for="produtoDescricao">Descrição do Produto</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Coloque aqui um link que fale do produto" id="produtoLink" type="text" class="validate">
+        <label for="produtoLink">Link do Produto</label>
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Adicionar</button>
+      </div>
+    </form>
+  </div>
+
+    
+    
     <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
 
