@@ -7,7 +7,7 @@ Db.enablePersistence()
         }
     });
 
-Db.collection('produtos').onSnapshot(snapshot => {
+Db.collection('Produtos').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(change => {
         if (change.type === 'added') {
             renderRecipe(change.doc.data(), change.doc.id);
@@ -22,14 +22,14 @@ const form = document.querySelector('form');
 form.addEventListener('submit', evt => {
     evt.preventDefault();
 
-    const produtos = {
+    const Produtos = {
         nome: form.produtoTitulo.value,
         descricao: form.produtoDescricao.value,
         link: form.produtoLink.value,
         endereco_imagem: form.produtoArquivo.value
     };
 
-    Db.collection('produtos').add(produto)
+    Db.collection('Produtos').add(produto)
         .catch(err => console.log(err));
 
     //reseta o formulario
