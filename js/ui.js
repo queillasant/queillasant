@@ -1,6 +1,6 @@
 // essa funcao seleciona o row (que esta no index)
 // para depois desenhar todos os cards la
-const produtos = document.querySelector('.produtos');
+const Produtos = document.querySelector('.produtos');
 
 document.addEventListener('DOMContentLoaded', function() {
 	// menus laterais 
